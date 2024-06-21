@@ -9,7 +9,8 @@ import tensorflow as tf
 import keras_tuner
 import mlm8s
 import matplotlib.pyplot as plt
-from google.colab import files
+#from google.colab import files
+from utils import print2txt
 tf.__version__
 
 
@@ -73,4 +74,4 @@ tf.keras.utils.plot_model(best_model,
 
 
 !zip -r training_results.zip training_results
-files.download('training_results.zip')
+#files.download('training_results.zip')
